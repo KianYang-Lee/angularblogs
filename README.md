@@ -24,3 +24,10 @@ npm cache clean --force
 
 npm install -g @angular/cli
 ```
+
+## Testing
+Perform test with headless browser by:
+
+```sh
+ng test --browsers ChromeHeadless
+```
