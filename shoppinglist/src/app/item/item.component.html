@@ -1,0 +1,13 @@
+<p>This is child to {{ cartName }}</p>
+<p>This is item component!</p>
+<ul>
+  {{
+    injectedItem.name
+  }}
+  <!-- interpolation -->
+  <li>ID: {{ injectedItem.id }}</li>
+  <li>Price: {{ injectedItem.price }}</li>
+  <li>Quantity: {{ injectedItem.quantity }}</li>
+</ul>
+
+<button (click)="addItem()" [disabled]="addedItem">Add New Item</button>

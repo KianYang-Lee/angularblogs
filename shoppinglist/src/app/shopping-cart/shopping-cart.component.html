@@ -1,0 +1,9 @@
+<p>Shopping Cart</p>
+<p>I am the parent component!</p>
+<app-item
+  *ngFor="let item of items"
+  [injectedItem]="item"
+  [cartName]="cartName"
+  (newItemEvent)="addItem($event)"
+>
+</app-item>

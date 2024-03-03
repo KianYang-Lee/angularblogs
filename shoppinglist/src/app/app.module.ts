@@ -2,12 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ItemsComponent } from './items/items.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
-  declarations: [AppComponent, ItemsComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    ShoppingCartComponent,
+    ItemComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
